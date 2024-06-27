@@ -1,13 +1,15 @@
 "use client"
 
-import Link from "fs"
-import Image from "next/image"
-import { FormEventHandler, useState } from "react"
-
+import Link from "fs";
+import Image from "next/image";
+import { FormEventHandler, useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 
 function loginPage() {
+
+    const router = useRouter();
 
     return (
 
@@ -100,9 +102,9 @@ function loginPage() {
 
                     <div className="flex flex-row w-full justify-center content-center gap-[56px] items-center">
 
-                        <img src="assets/gp.png" alt="google play button" className="h-[70px]"/>
+                        <button onClick={() => (router.replace("/dashboard"))}><img src="assets/gp.png" alt="google play button" className="h-[70px]"/></button>
 
-                        <img src="assets/ap.png" alt="apple store button" className="h-[50px]"/>
+                        <button onClick={() => (router.replace("/dashboard"))}><img src="assets/ap.png" alt="apple store button" className="h-[50px]"/></button>
 
                     </div>
                     
