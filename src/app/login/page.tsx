@@ -19,7 +19,7 @@ function loginPage() {
         
             
             {/* Login form container */}
-            <div className="bg-white h-screen w-1/2 pt-16 pb-16 flex flex-col place-items-center pl-12 pr-12 relative">
+            <div className="bg-white h-screen w-1/2 pt-8 pb-8 flex flex-col place-items-center pl-12 pr-12 relative">
 
                 {/* Logo */}
                 <img src="assets/logo.png" alt="logo" className="w-[330px] h-[100px]"/>
@@ -65,15 +65,30 @@ function loginPage() {
                 
 
                 {/* alternative registrations */}
-                <div>
-                    <text className="text-neutral-300 font-semibold"> or you can register with...</text>
+                <div className="flex flex-col items-center pt-[32px] pb-[24px]">
+                    <text className="text-neutral-300 font-semibold pb-[16px]"> or you can register with...</text>
+                    
+                    <div className="flex flex-row gap-[24px]">
+                        <button className="py-2 text-neutral-400 font-semibold w-[140px] border-2 border-neutral-900 rounded-[100px] flex flex-row justify-center gap-2"> 
+
+                            <img src="assets/google.png" alt="google icon" className=" size-6"/> Google
+                        
+                        </button>
+
+                        <button className="py-2 text-neutral-400 font-semibold w-[140px] border-2 border-neutral-900 rounded-[100px] flex flex-row justify-center gap-2">
+                            
+                        <img src="assets/fb.png" alt="google icon" className=" size-6"/> Facebook
+                            
+                        </button>
+
+                    </div>
 
                 </div>
 
         
 
                 {/* Download Buttons */}
-                <div className="flex flex-col relative border-t-2 border-neutral-700 bottom-0 items-center p-[8px] space-y-5">
+                <div className="flex flex-col relative border-t-2 border-neutral-700 bottom-0 items-center p-[8px] space-y-5 pt-4">
                     
                     {/* Text */}
                     <div className="w-full">
