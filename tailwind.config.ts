@@ -1,6 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  mode: 'jit',
+  purge: [
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,6 +18,31 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        
+        'custom-green' : '#007141',
+
+        neutral: {
+          '100' : '#262626',
+          '200' : '#393939',
+          '300' : '#494949',
+          '400' : '#626262',
+          '500' : '#767676',
+          '600' : '#909090',
+          '700' : '#BCBCBC',
+          '800' : '#D2D2D2',
+          '900' : '#E4E4E4',
+          '1000' : '#E8E8E8',
+          '1100' : '#F8F8F8'
+        },
+
+        mustard: {
+          '100' : '#FFDB58',
+          '200' : '#FFEA9F',
+          '300' : '#FFF7DB',
+        },
+      },
+
     },
   },
   plugins: [],
