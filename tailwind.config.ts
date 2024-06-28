@@ -17,6 +17,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'green-gradient': 'linear-gradient(to right, #03BE59, #04BD85)',
       },
       colors:{
         
@@ -36,6 +37,11 @@ const config: Config = {
           '1100' : '#F8F8F8',
         },
 
+        red :{
+          '100' : '#FF2C2C'
+
+        },
+
         mustard: {
           '100' : '#FFDB58',
           '200' : '#FFEA9F',
@@ -47,6 +53,10 @@ const config: Config = {
           '200' : '#3CE88B',
           '300' : '#A4FFCE',
         },
+
+        // btn:{
+        //   'green': 'linear-gradient(to right, #03BE59, #04BD85)'
+        // },
       },
 
     },
