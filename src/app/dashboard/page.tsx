@@ -125,7 +125,7 @@ function dashboardPage(){
                     </div>
                     
                     <div>
-                        <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        <div className="w-full flex flex-row gap-5 content-center justify-start pt-2">
                             
                             <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-2 text-left flex items-center gap-2"> 
                             <span className="material-symbols-outlined">loyalty</span> My Points</button>
@@ -205,7 +205,7 @@ function dashboardPage(){
                         <div className="w-full bg-neutral-1100 py-6 px-20 flex flex-row justify-between rounded-lg items-center gap-[56px]">
 
                             <div className="flex flex-col w-full gap-2">
-                                <text className="text-neutral-600 text-[14px] font-medium"> Last Payment </text>
+                                <text className="text-neutral-600 text-[14px] font-medium flex flex-row gap-2 w-full content-center"><span className="material-symbols-outlined">calendar_month</span> Last Payment </text>
 
                                 <text className="text-custom-green text-[16px] font-semibold text-right w-full">December 3, 2023</text>
                             </div>
@@ -221,7 +221,7 @@ function dashboardPage(){
                         <div className="w-full bg-neutral-1100 py-6 px-20 flex flex-row justify-between rounded-lg items-center gap-[56px]">
 
                             <div className="flex flex-col w-full gap-2">
-                                <text className="text-neutral-600 text-[14px] font-medium"> Due Date </text>
+                                <text className="text-neutral-600 text-[14px] font-medium flex flex-row gap-2 w-full content-center"><span className="material-symbols-outlined">event</span> Due Date </text>
 
                                 <text className="text-red-100 text-[16px] font-semibold text-right w-full">January 3, 2024</text>
                             </div>
@@ -267,7 +267,7 @@ function dashboardPage(){
                         </div>
 
                         {/* High and low */}
-                        <div className="w-full h-[90px] bg-neutral-1100 border-2 border-neutral-900 rounded-[8px] py-4">
+                        <div className="w-full h-[90px] bg-neutral-1100 border-2 border-neutral-900 rounded-[8px] py-6">
                             
                             <div className="h-full flex flex-row">
                                 <div className="flex flex-col w-full justify-center items-center h-full">
@@ -303,7 +303,6 @@ function dashboardPage(){
                     </div>
 
                 </div>
-
 
 
             </div>
