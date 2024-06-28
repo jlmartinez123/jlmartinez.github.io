@@ -3,11 +3,11 @@
 import Link from "fs";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import "material-symbols";
+import 'material-symbols';
 
 function dashboardPage(){
 
-    const router = useRouter();
+    // const router = useRouter();
 
     const items = ['Item 1', 'Item 2', 'Item 3'];
 
@@ -17,31 +17,71 @@ function dashboardPage(){
         <div className="flex flex-row w-screen h-screen bg-white">
 
             {/* Navigation Bar */}
-            <div className="w-[260px] h-full bg-green-100 px-[16px] py-[32px]">
+            <div className="w-[260px] h-full bg-green-100 px-[16px] py-[32px] flex flex-col justify-between">
                 <img src="assets/mpulogo.png" alt="MORE PowerUp Logo"/>
 
                 {/*========== Menu Container ==========*/}
-                <div className="pt-[48px] space-y-[8px] text-left">
+                <div className="pt-[24px] space-y-[8px]">
+                    
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">home</span> Dashboard</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Dashboard</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">credit_card</span> Transactions</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Transactions</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">lightbulb</span> Outages</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Outages</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">campaign</span> Alerts</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Alerts</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">manage_accounts</span> Update Account</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Update Account</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">electrical_services</span> Services</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Services</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">info</span> About MORE PowerUp</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">About MORE PowerUp</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">shield_person</span> Privacy Policy</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Privacy Policy</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">gavel</span> Terms and Conditions</button>
+                    </div>
 
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Terms and Conditions</button>
-
-                    <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Contact Us</button>
+                    <div className="w-full flex flex-row gap-5 content-center justify-start">
+                        
+                        <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-1 text-left flex items-center gap-2"> 
+                        <span className="material-symbols-outlined">call</span> Contact Us</button>
+                    </div>
 
                 </div>
 
@@ -69,27 +109,40 @@ function dashboardPage(){
                             <div className="w-full">
 
                                 <div className="w-full">
-                                    <text className="font-bold text-[14px] font-sans text-center text-neutral-100"> Nong Moroy </text>
+                                    <text className="font-bold text-[12px] font-sans text-center text-neutral-100"> Nong Moroy </text>
                                 </div>
 
                                 <div className="w-full">
-                                    <text className="font-bold text-[12px] font-sans text-center text-neutral-400"> JARTAC42922231 </text>
+                                    <text className="font-bold text-[10px] font-sans text-center text-neutral-400"> JARTAC42922231 </text>
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <button className="text-neutral-100 leading-[124%] text-[12px] p-2 font-semibold bg-mustard-100 w-full rounded-lg py-2 bottom-0 shadow-md">My Account</button>
+                        <button className="text-neutral-100 leading-[124%] text-[12px] p-2 font-semibold bg-mustard-100 w-full rounded-lg py-2 bottom-0 shadow-md flex justify-center items-center"> <span className="material-symbols-outlined">person</span>My Account</button>
 
                     </div>
                     
                     <div>
-                        <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">My Points</button>
+                        <div className="w-full flex flex-row gap-5 content-center justify-start">
+                            
+                            <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-2 text-left flex items-center gap-2"> 
+                            <span className="material-symbols-outlined">loyalty</span> My Points</button>
+                        </div>
                         
-                        <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Settings</button>
+                        <div className="w-full flex flex-row gap-5 content-center justify-start">
+                            
+                            <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-2 text-left flex items-center gap-2"> 
+                            <span className="material-symbols-outlined">settings</span> Settings</button>
+                        </div>
 
-                        <button className="w-full text-white font-sans font-normal text-[14px] leading-[124%] tracking-[-3%] py-2 text-left">Sign out</button>
+                        <div className="w-full flex flex-row gap-5 content-center justify-start">
+                            
+                            <button className=" text-white font-sans font-normal text-[12px] leading-[124%] tracking-[-3%] py-2 text-left flex items-center gap-2"> 
+                            <span className="material-symbols-outlined">logout</span> Sign out</button>
+                        </div>
+
                     </div>
 
                 </div>
@@ -136,13 +189,13 @@ function dashboardPage(){
                 </div>
 
                 {/* Billing section */}
-                <div className="h-[210px] bg-white drop-shadow-xl rounded-lg py-6 px-12">
+                <div className="h-[210px] bg-white drop-shadow-xl rounded-lg py-6 px-12 flex flex-col gap-2">
 
                     {/* Header */}
-                    <div className="py-2 flex flex-row justify-between">
+                    <div className="py-2 flex flex-row justify-between items-center">
                         <h1 className="text-neutral-100 text-[18px] font-semibold">Billing Section</h1>
 
-                        <button className="text-neutral-100 leading-[124%] text-[12px] p-2 font-semibold bg-mustard-100 inline-block rounded-lg py-4 px-[100px] bottom-0 shadow-md"> Pay Bill </button>
+                        <button className="text-neutral-100 leading-[124%] text-[12px] p-2 font-semibold bg-mustard-100 flex items-center rounded-lg gap-2 py-2 px-[100px] bottom-0 shadow-md "> <span className="material-symbols-outlined">credit_card</span>Pay Bill </button>
                     </div>
                     
                     {/* Analytics */}
@@ -186,10 +239,10 @@ function dashboardPage(){
                 <div className="w-full h-[400px] flex flex-row gap-6">
 
                     {/* Alerts box */}
-                    <div className="w-full bg-white drop-shadow-xl py-6 px-12 rounded-lg h-full">
+                    <div className="w-full bg-white drop-shadow-2xl py-6 px-12 rounded-lg h-full">
                         
                         {/* Header */}
-                        <div className="flex justify-between">
+                        <div className="flex justify-between items-center">
                             <text className="text-neutral-100 text-[18px] font-semibold"> Latest News</text>
 
                             <button className="underline text-neutral-400"> See all </button>
@@ -203,7 +256,7 @@ function dashboardPage(){
                     </div>
 
                     {/* Consumption Overview box */}
-                    <div className="w-full bg-white drop-shadow-xl py-6 px-12 rounded-lg h-full">
+                    <div className="w-full bg-white drop-shadow-2xl py-6 px-12 rounded-lg h-full">
                         
                         {/* Header */}
                         <div className="flex justify-between">

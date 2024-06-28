@@ -53,12 +53,11 @@ const config: Config = {
           '200' : '#3CE88B',
           '300' : '#A4FFCE',
         },
-
-        // btn:{
-        //   'green': 'linear-gradient(to right, #03BE59, #04BD85)'
-        // },
       },
+      fontFamily:{
+        
 
+      },
     },
   },
   plugins: [],

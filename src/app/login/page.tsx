@@ -4,6 +4,7 @@ import Link from "fs";
 import Image from "next/image";
 import { FormEventHandler, useState } from "react";
 import { useRouter } from "next/navigation";
+import 'material-symbols';
 
 
 
