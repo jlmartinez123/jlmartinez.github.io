@@ -193,9 +193,9 @@ function dashboardPage(){
 
                     {/* Header */}
                     <div className="py-2 flex flex-row justify-between items-center">
-                        <h1 className="text-neutral-100 text-[18px] font-semibold">Billing Section</h1>
+                        <h1 className="text-neutral-100 text-[18px] font-semibold font-noto">Billing Information</h1>
 
-                        <button className="text-neutral-100 leading-[124%] text-[12px] p-2 font-semibold bg-mustard-100 flex items-center rounded-lg gap-2 py-2 px-[100px] bottom-0 shadow-md "> <span className="material-symbols-outlined">credit_card</span>Pay Bill </button>
+                        <button className="text-neutral-100 leading-[124%] text-[12px] p-2 font-medium bg-mustard-100 flex items-center rounded-lg gap-2 py-2 px-[100px] bottom-0 shadow-md "> <span className="material-symbols-outlined">credit_card</span>Pay Bill </button>
                     </div>
                     
                     {/* Analytics */}
@@ -243,32 +243,59 @@ function dashboardPage(){
                         
                         {/* Header */}
                         <div className="flex justify-between items-center">
-                            <text className="text-neutral-100 text-[18px] font-semibold"> Latest News</text>
+                            <text className="text-neutral-100 text-[18px] font-semibold font-noto"> Latest News</text>
 
                             <button className="underline text-neutral-400"> See all </button>
                         </div>
 
                         <div className="h-full flex justify-center items-center">
-                            <text className="text-neutral-200 font-semibold text-[32px]">List goes here</text>
+                            {/* <text className="text-neutral-200 font-semibold text-[32px]">List goes here</text> */}
                         </div>
 
 
                     </div>
 
                     {/* Consumption Overview box */}
-                    <div className="w-full bg-white drop-shadow-2xl py-6 px-12 rounded-lg h-full">
+                    <div className="w-full bg-white drop-shadow-2xl py-6 px-12 rounded-lg h-full flex flex-col gap-4">
                         
                         {/* Header */}
                         <div className="flex justify-between">
-                            <text className="text-neutral-100 text-[18px] font-semibold"> Consumption Overview</text>
+                            <text className="text-neutral-100 text-[18px] font-semibold font-noto"> Consumption Overview</text>
 
                             <input type="month" className="border-2 rounded-md border-neutral-700"/>
 
                         </div>
 
-                        <div className="h-full flex justify-center items-center">
+                        {/* High and low */}
+                        <div className="w-full h-[90px] bg-neutral-1100 border-2 border-neutral-900 rounded-[8px] py-4">
+                            
+                            <div className="h-full flex flex-row">
+                                <div className="flex flex-col w-full justify-center items-center h-full">
 
-                            <text className="text-neutral-200 font-semibold text-[32px]">Graph goes here</text>
+                                    <text className="text-neutral-100 text-[16px] font-sans font-bold">0 kWh</text>
+
+                                    <text className="text-neutral-600 text-[16px] font-sans font-regular">Lowest</text>
+
+                                </div>
+                                
+                                {/* Vertical line */}
+                                <div className="h-full bg-neutral-800 px-[1px]"/>
+
+                                <div className="flex flex-col w-full justify-center items-center h-full">
+
+                                    <text className="text-neutral-100 text-[16px] font-sans font-bold">0 kWh</text>
+
+                                    <text className="text-neutral-600 text-[16px] font-sans font-regular">Highest</text>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className=" flex justify-center items-center">
+
+                            {/* <text className="text-neutral-200 font-semibold text-[32px]">Graph goes here </text> */}
 
                         </div>
 

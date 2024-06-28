@@ -13,6 +13,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+       'noto' : ["Noto Sans", 'sans-serif'],
+       'inter': ["Inter", 'sans-serif']
+  
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -53,10 +58,6 @@ const config: Config = {
           '200' : '#3CE88B',
           '300' : '#A4FFCE',
         },
-      },
-      fontFamily:{
-        
-
       },
     },
   },
