@@ -7,7 +7,7 @@ export default function Home() {
 
   const router= useRouter();
   //component (test lang ni)
-  // const data = [{name:'john doe', age: 31}, {name:'jane doe', age: 21}, {name:'jake', age: 34}]
+  const data = [{name:'john doe', age: 31}, {name:'jane doe', age: 21}, {name:'jake', age: 34}]
 
   //Form variables(?)
   const [firstName, setFirstName] = useState(" "); 
@@ -26,14 +26,14 @@ export default function Home() {
   return <div className=" max-w-full h-screen flex items-center justify-center flex-col gap-6">
     
     {/* component part 2 (Test lang ni) */}
-    {/* {data.map((item, index) => (
+    {data.map((item, index) => (
       <div className="p-5 bg-blue-600 rounded-md" key={index}>
         <text> {item.age} {item.name}</text>
       </div>
         )
       )
     
-    } */}
+    }
 
 
     <div className=" bg-opacity-20 bg-gradient-to-tl from-red-900 to-purple-800 rounded-3xl pt-8 pb-4 pl-8 pr-8 space-x-1.5 ring-white">

@@ -4,12 +4,13 @@ import Link from "fs";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import 'material-symbols';
+import { FormEventHandler, useState } from "react";
 
 function dashboardPage(){
 
     // const router = useRouter();
 
-    const items = ['Item 1', 'Item 2', 'Item 3'];
+    const data = [{name:'Unscheduled Power Interruption', date:"December 31,2023"},{name:"Test", date:"January 1, 2023"},{name:"Unscheduled Power Interruption 2", date:"January 2, 2023"}]
 
     return (
 
@@ -17,7 +18,7 @@ function dashboardPage(){
         <div className="flex flex-row w-screen h-screen bg-white">
 
             {/* Navigation Bar */}
-            <div className="w-[260px] h-full bg-green-100 px-[16px] py-[32px] flex flex-col justify-between">
+            <div className="w-[260px] h-fit lg:h-full bg-green-100 px-[16px] py-[32px] flex flex-col justify-between">
                 <img src="assets/mpulogo.png" alt="MORE PowerUp Logo"/>
 
                 {/*========== Menu Container ==========*/}
@@ -189,7 +190,7 @@ function dashboardPage(){
                 </div>
 
                 {/* Billing section */}
-                <div className="h-[210px] bg-white drop-shadow-xl rounded-lg py-6 px-12 flex flex-col gap-2">
+                <div className="h-[210px] bg-white drop-shadow-xl rounded-lg py-6 px-12 flex flex-col gap-2 w-fit">
 
                     {/* Header */}
                     <div className="py-2 flex flex-row justify-between items-center">
@@ -202,7 +203,7 @@ function dashboardPage(){
                     <div className="flex flex-row gap-9">
                         
                         {/* Last Payment */}
-                        <div className="w-full bg-neutral-1100 py-6 px-20 flex flex-row justify-between rounded-lg items-center gap-[56px]">
+                        <div className="w-fit lg:h-full bg-neutral-1100 py-6 px-20 flex flex-row justify-between rounded-lg items-center gap-[56px]">
 
                             <div className="flex flex-col w-full gap-2">
                                 <text className="text-neutral-600 text-[14px] font-medium flex flex-row gap-2 w-full content-center"><span className="material-symbols-outlined">calendar_month</span> Last Payment </text>
@@ -218,7 +219,7 @@ function dashboardPage(){
                         </div>
                         
                         {/* Due Date */}
-                        <div className="w-full bg-neutral-1100 py-6 px-20 flex flex-row justify-between rounded-lg items-center gap-[56px]">
+                        <div className="w-fit lg:h-full bg-neutral-1100 py-6 px-20 flex flex-row justify-between rounded-lg items-center gap-[56px]">
 
                             <div className="flex flex-col w-full gap-2">
                                 <text className="text-neutral-600 text-[14px] font-medium flex flex-row gap-2 w-full content-center"><span className="material-symbols-outlined">event</span> Due Date </text>
@@ -239,7 +240,7 @@ function dashboardPage(){
                 <div className="w-full h-[400px] flex flex-row gap-6">
 
                     {/* Alerts box */}
-                    <div className="w-full bg-white drop-shadow-2xl py-6 px-12 rounded-lg h-full">
+                    <div className="w-full bg-white drop-shadow-2xl py-6 px-12 rounded-lg h-full flex flex-col gap-4 overflow-hidden">
                         
                         {/* Header */}
                         <div className="flex justify-between items-center">
@@ -247,10 +248,25 @@ function dashboardPage(){
 
                             <button className="underline text-neutral-400"> See all </button>
                         </div>
+                        
+                        {/* Alert list */}
+                        <div className="h-full w-full flex flex-col">
 
-                        <div className="h-full flex justify-center items-center">
-                            {/* <text className="text-neutral-200 font-semibold text-[32px]">List goes here</text> */}
-                        </div>
+                            {data.map((item,index) => 
+                            
+                            <a href="https://www.google.com"><div className='w-full bg-white border-2 rounded-lg p-2 border-neutral-700 align-middle flex flex-row gap-4 items-center h-fit' key={index}>
+                                <div className="w-[90px] h-[90px] place-self-center border-2 border-neutral-300 p-2 flex justify-center rounded-lg bg-custom-green">
+                                    <img src="assets/logo.png" alt="placeholder"/>
+                                </div>
+                                
+                                <div className="flex flex-col w-full">
+                                    <text className="text-neutral-100 font-semibold text-[18px]">{item.name}</text>  
+                                    <text className="text-neutral-600">{item.date}</text>
+                                </div>
+                            </div></a>)
+                            }
+
+                         </div>
 
 
                     </div>
